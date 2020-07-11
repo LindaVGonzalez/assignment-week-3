@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+/** HEADER **/
+#header-nav {
+  background-color: #969696;
+  border-radius: 0;
+  border: 0;
+}
+#header-nav button {
+  background: transparent;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  margin-top: 40px;
+  clear: both;
+  border: none;
+
+}
+
+.navbar-toggle:hover {
+  color: white !important;
+}
+
+
+.navbar-collapse {
+  border-top: 0;
+}
+#collapsable-nav {
+    display: none;
+  }
+.navbar-brand,
+.navbar-nav li a {
+  text-decoration: none;
+}
+
+.navbar-brand h1 {
+  color: #000000;
+  font-size: 1.8em;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+
+
+#nav-list {
+  background-color: #969696;
+  margin-top: 10px;
+}
+
+#nav-list a {
+  font-weight: bold;
+  color: #000000;
+  font-size: 1.2em;
+  font-family: cursive;
+  text-align: center;
+}
+
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+
+#main-content {
+  width: 92%;
+  margin-bottom: 30px;
+}
+
+#main-content h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-family: cursive;
+}
+
+#main-content h3 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: black;
+}
+
+#main-content p {
+  color: #000000;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#chicken-tile,
+#beef-tile,
+#sushi-tile {
+  width: 100%;
+  padding: 20px;
+  background-color: #969696;
+  margin-bottom: 60px;
+  
+}
+
+.container a:hover,
+.container a:focus {
+  text-decoration: none;
+}
+.navbar-toggle {
+    display: none;
+  }
+#collapsable-nav a a:hover{
+  background: #E7E7E7;
+}
+
+
+/* END HEADER */
+/********** Large devices only **********/
+@media (min-width: 1200px){
+  #main-content p a {
+    display:none;
+  }
+}
+
+/********** Medium devices only **********/
+@media @media (min-width: 992px) and (max-width:1199px){
+  #main-content p a {
+    display:none;
+  }
+  
+}
+
+/********** Small devices only **********/ 
+@media (min-width: 768px) and (max-width: 991px) {
+  #collapsable-nav {
+    display: block;
+  }
+
+
+  .navbar-header{
+    display:flex;
+    width: 100%;
+  }
+  #nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #nav-list>li{
+    margin:auto 10px;
+  }
+  #main-content p a {
+    display:block;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .navbar-toggle {
+    display: block;
+  }
+  #collapsable-nav{
+    display:block;
+  }
+  .collapse:not(.show) {
+      display: none !important;
+  }
+
+  .row>div>article {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 {
+    /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw;
+    /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a {
+    /* Collapsed nav menu text */
+    font-size: 1.2em;
+    color: #000000;
+  }
+
+  #collapsable-nav a span {
+    /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  #nav-list>li{
+    margin:auto !important;
+  }
+  #main-content p a {
+    display:block;
+  }
+}
